@@ -8,7 +8,7 @@ class Header extends React.Component{
         // const { textStyle, viewStyle } = styles;
         return (
             <View style={styles.viewStyle}>
-                <Text style={styles.textStyle}> Albums!! </Text>
+                <Text style={styles.textStyle}> {this.props.headerText} </Text>
             </View>
         );
     }
@@ -16,7 +16,7 @@ class Header extends React.Component{
 
 const styles = {
     viewStyle: {
-        backgroundColor: '#F8F8F8',
+        backgroundColor: '#E6E6E6',
         justifyContent: 'center',
         alignItems: 'center',
         height: 70,
@@ -24,8 +24,8 @@ const styles = {
         // shadowColor: '#000',
         // shadowOffset: { width: 0, height: 200 }, 
         // shadowOpacity: 1,
-        borderColor: "#000",
-        borderRadius: 0.1
+        // borderColor: "#000",
+        // borderRadius: 0.1
 
     },
     textStyle: {

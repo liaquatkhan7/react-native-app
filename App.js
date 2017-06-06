@@ -25,12 +25,15 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Header from './src/componenet/header';
-
+import AlbumList from './src/componenet/AlbumList'
 export default class App extends React.Component {
     
     render() {  
       return (
-                <Header />
+          <View>
+                <Header headerText='Albums'/>
+                <AlbumList />
+          </View >
               );
       }
   }

@@ -1,9 +1,9 @@
 //import library
-import React from 'react';
+import React, { Component } from 'react';
 import { Text, View } from 'react-native';
 
 // Male a Componenet
-class Header extends React.Component{
+class Header extends Component{
     render(){
         // const { textStyle, viewStyle } = styles;
         return (

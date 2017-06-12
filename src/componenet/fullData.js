@@ -1,8 +1,3 @@
-import React, {Component} from 'react';
-import { View, Text } from 'react-native';
-// import axios from 'axios';
-// import AlbumDetail from './AlbumsDetails';
-// import Data from './fullData'
 const Data = [
             {
                 title: "Taylor Swift",
@@ -41,46 +36,4 @@ const Data = [
             }
 ];
 
-class AlbumList extends Component {
-    
-    state = { 
-       albums: []
-    };
-
-    componentWillMount(){
-    //      axios.get('http://rallycoding.herokuapp.com/api/music_albums')
-    //         .then(responce => this.setState({albums: responce.data}));
-            this.setState({albums : Data});
-    }
-    
-    renderAlbums(){
-        return (
-                // <Text> {this.state.albums[3].title} </Text>
-                this.state.albums.map( (curentVal, index ) => {
-                console.log(curentVal.title);
-                <Text style={styles.textStyles}>{curentVal.title}</Text>
-                
-            })
-            // <AlbumDetail key={n.title} album={n} />
-        )
-    }
-
-    render(){
-        console.log(this.state);
-        return (
-            <View>
-                {/*<Text>{Data[1].title}</Text>*/}
-                <Text>{this.renderAlbums()}</Text>
-            </View>
-        )
-    }
-}
-
-const styles = {
-    textStyles: {
-        fontSize: 15,
-        color: '#000'
-    }
-}
-
-export default AlbumList;
+export default Data;
